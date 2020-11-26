@@ -1,0 +1,107 @@
+body{margin: 0px;}
+#wrapper{
+    /*background-image: url(/img/photashopadbilld1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100vw;*/
+    grid-template-areas: 
+    "hd hd hd hd hd"
+    "nv nv nv nv nv"
+    "m1 m1 m1 m1 as"
+    "ft ft ft ft ft"
+    ;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 80vh 45px auto 70px;
+    height: 400vh;
+    width: 100vw;
+    max-width: 100%;
+    }
+
+    header{
+        grid-area: hd;
+        background-color: teal;
+    }
+    .bihd{
+        height: 80vh;
+        width: 100%;
+    }
+    #navbar{
+        grid-area: nv;
+        background-color: turquoise;
+    }
+    footer{
+        grid-area:ft;
+        background-color: yellow;
+    }
+    
+    main{
+        grid-area:m1;
+        background-color: yellowgreen;
+    }
+    #aside1{
+        grid-area: as;
+        background-color: blue;
+        text-align: center;
+    }
+    .hap{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .apet{
+        background-color: brown;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        list-style-type: none;
+        padding-right: 20%;
+        padding-top:25px;
+    }
+    .aptvå{
+        background-color: brown;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        list-style-type: none;
+        padding-right: 20%;
+        padding-top:25px;
+    }
+    /* lista saken*/
+    .lista{ 
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    li{
+        flex: 1;
+        float: left;
+    }
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 16px 14px;
+        text-decoration: none;
+    }
+    li a:hover {
+        background-color:black;
+      }
+    li a:hover:not(.active){
+        background-color: green;
+    }
+    .active{
+        background-color: black;
+    }
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+    /*lista saken*/
+
+    
