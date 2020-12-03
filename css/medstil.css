@@ -8,15 +8,17 @@ body{margin: 0px;}
     "hd hd hd hd hd"
     "nv nv nv nv nv"
     "m1 m1 m1 m1 as"
+    "m1 m1 m1 m1 as"
     "ft ft ft ft ft"
     ;
     display: grid;
     grid-template-columns: repeat(5,1fr);
-    grid-template-rows: 80vh 45px auto 70px;
+    grid-template-rows: 80vh 45px auto auto 70px;
     height: 400vh;
     width: 100vw;
     max-width: 100%;
     }
+    
 
     header{
         grid-area: hd;
@@ -28,28 +30,29 @@ body{margin: 0px;}
     }
     #navbar{
         grid-area: nv;
-        background-color: turquoise;
+        background-color: lightskyblue;
     }
     footer{
         grid-area:ft;
-        background-color: yellow;
+        background-color: darkgrey;
     }
     
     main{
         grid-area:m1;
-        background-color: yellowgreen;
+        background-color: lightgray;
     }
     #aside1{
         grid-area: as;
-        background-color: blue;
+        background-color: black;
         text-align: center;
+        color: white;
     }
     .hap{
         padding-top: 10px;
         padding-bottom: 10px;
     }
     .apet{
-        background-color: brown;
+        background-color: rgb(102, 102, 102);
         height: 200px;
         display: flex;
         flex-direction: column;
@@ -60,7 +63,7 @@ body{margin: 0px;}
         padding-top:25px;
     }
     .aptvå{
-        background-color: brown;
+        background-color: rgb(102, 102, 102);;
         height: 200px;
         display: flex;
         flex-direction: column;
@@ -89,13 +92,13 @@ body{margin: 0px;}
         text-decoration: none;
     }
     li a:hover {
-        background-color:black;
+        background-color:rgb(86, 86, 255);
       }
     li a:hover:not(.active){
-        background-color: green;
+        background-color: rgb(95, 200, 250);
     }
     .active{
-        background-color: black;
+        background-color: rgb(86, 86, 255);
     }
     .sticky {
         position: fixed;
@@ -103,5 +106,26 @@ body{margin: 0px;}
         width: 100%;
       }
     /*lista saken*/
+
+    figure{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+    figure > img{
+        width: 50%;
+        height: auto;
+        /*border-radius: 50px;*/
+        object-fit: cover;
+        margin: 6% 0%;
+    }
+    .midtext{
+        margin: 6% 0%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    
 
     
