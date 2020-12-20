@@ -8,18 +8,17 @@ body{margin: 0px;}
     "hd hd hd hd hd"
     "nv nv nv nv nv"
     "m1 m1 m1 m1 as"
-    "m1 m1 m1 m1 as"
     "ft ft ft ft ft"
     ;
     display: grid;
     grid-template-columns: repeat(5,1fr);
-    grid-template-rows: 80vh 45px auto auto 70px;
-    height: 400vh;
+    grid-template-rows: 80vh 45px auto 70px;
+    height: auto;
     width: 100vw;
     max-width: 100%;
     }
-    
 
+    
     header{
         grid-area: hd;
         background-color: teal;
@@ -36,6 +35,9 @@ body{margin: 0px;}
         grid-area:ft;
         background-color: darkgrey;
     }
+    .footertext{
+        margin-left: 30%;
+    }
     
     main{
         grid-area:m1;
@@ -46,6 +48,8 @@ body{margin: 0px;}
         background-color: black;
         text-align: center;
         color: white;
+        height: auto;
+        padding-bottom: 200px;
     }
     .hap{
         padding-top: 10px;
@@ -108,10 +112,18 @@ body{margin: 0px;}
     /*lista saken*/
 
     figure{
+        grid-area: fi;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+    p{
+        margin-left: 10px;
+    }
+    .midtext1{
+       margin: 10px 10px 10px 20px 
 
     }
     figure > img{
@@ -119,13 +131,33 @@ body{margin: 0px;}
         height: auto;
         /*border-radius: 50px;*/
         object-fit: cover;
-        margin: 6% 0%;
+        margin: 0% 0%;
     }
-    .midtext{
-        margin: 6% 0%;
-        display: flex;
-        justify-content: flex-start;
-    }
-    
 
-    
+    .lådamain{
+        background-color: rgb(90, 90, 190);
+        width: 500px;
+        margin-top: 2vh;
+        margin-left: 25%;
+        margin-right: 25%;
+        height: 129vh;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction:column; 
+        
+    }
+    .footer2{
+        margin: 0px;
+    }
+    .två{
+        height:800px;
+        width: 0%;
+    }
+
+    .meny{
+        padding-top: 0px;
+    }
+
+    .aboutusss{
+        display: flex;
+    }
